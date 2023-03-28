@@ -385,21 +385,31 @@
       <script src="./js/goToTop.js"></script>
       <script src="./js/chatbot.js"></script>
       <script>
-           function openTab(evt, tabName, url) {
-        var i, tabContent, tabBtn;
-        tabContent = document.getElementsByClassName("tab-content");
-        for (i = 0; i < tabContent.length; i++) {
-          tabContent[i].style.display = "none";
+        function openTab(evt, tabName, hash) {
+          var i, tabContent, tabBtn;
+          tabContent = document.getElementsByClassName("tab-content");
+          for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+          }
+          tabBtn = document.getElementsByClassName("tab-btn");
+          for (i = 0; i < tabBtn.length; i++) {
+            tabBtn[i].className = tabBtn[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+          window.location.hash = hash;
         }
-        tabBtn = document.getElementsByClassName("tab-btn");
-        for (i = 0; i < tabBtn.length; i++) {
-          tabBtn[i].className = tabBtn[i].className.replace(" active", "");
+  
+        // Check if a hash value is set in the URL
+        if (window.location.hash) {
+          // Open the corresponding tab
+          var hash = window.location.hash.substr(1);
+          var tab = document.getElementById(hash);
+          if (tab) {
+            openTab(event, hash, window.location.hash);
+          }
         }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
-        history.pushState(null, null, url);
-      }
-        </script>
+      </script>
 </body>
  
 </html>
