@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資訊服務處</title>
+    <link rel="stylesheet" href="./ stylesheet/main.css">
+    <link rel="stylesheet" href="./ stylesheet/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./ stylesheet/swiper-bundle.min.css" />
+</head>
+<style>
+   .tab-content {
+        display: none;
+      }
+      .active {
+        display: block;
+      }
+</style>
+<body>
+
+<header>
+    <div class="container header-container">
+      
+      <input type="checkbox" id="openSidebarMenu">
+      <label for="openSidebarMenu" class="sidebarIconToggle menu d-block d-md-none d-lg-none" id="menuBtn">
+          <div class="spinner top"></div>
+          <div class="spinner middle"></div>
+          <div class="spinner bottom"></div>
+      </label>
+      <div id="sideMenu" class="side-menu">
+        <div class="menu-container">
+          <div class="menu-header">
+            <div class="collapse-btn" id="collapseBtn"></div>
+          </div>
+          <div class="details-container">
+            <details>
+              <summary>
+                <div class="title">
+                  服務介紹與申請
+                  <span class="arrow"></span>
+                </div>
+              </summary>
+              <div class="group">
+                <div class="headline"><a href="#">雲端主機與網路</a></div>
+                <ul>
+                  <li><a href="#">itri-cloud主機</a></li>
+                  <li><a href="#">網站代管</a></li>
+                  <li><a href="#">資訊系統環境</a></li>
+                  <li><a href="#">工研院APP</a></li>
+                  <li><a href="#">無線網路</a></li>
+                  <li><a href="#">有線網路</a></li>
+                </ul>
+                <div class="headline"><a href="#">電腦規格與軟體使用</a></div>
+                <ul>
+                  <li><a href="#">電腦請購規格建議</a></li>
+                  <li><a href="#">共購軟體 / 個人軟體</a></li>
+                </ul>
+                <div class="headline"><a href="#">院內分機與手機門號</a></div>
+                <ul>
+                  <li><a href="#">分機使用說明</a></li>
+                  <li><a href="#">行動電話申請</a></li>
+                </ul>
+                <div class="headline"><a href="#">E-mail 與網路空間</a></div>
+                <ul>
+                  <li><a href="#">E-mail 收費方案</a></li>
+                  <li><a href="#">Sdrive 收費方案</a></li>
+                  <li><a href="#">Teamspace</a></li>
+                </ul>
+                <div class="headline"><a href="#">雲端視訊</a></div>
+                <ul>
+                  <li><a href="#">視訊軟體說明</a></li>
+                </ul>
+                <div class="headline"><a href="#">資源探索</a></div>
+                <ul>
+                  <li><a href="#">圖書館</a></li>
+                  <li><a href="#">廠商探索系統</a></li>
+                  <li><a href="#">研發探索系統</a></li>
+                  <li><a href="#">研發工具介紹</a></li>
+                </ul>
+                <div class="headline"><a href="#">文書用印與文件權限</a></div>
+                <ul>
+                  <li><a href="#">文書網</a></li>
+                  <li><a href="#">文件權限保護工具</a></li>
+                </ul>
+    
+            </details>
+            <details>
+              <summary>
+                <div class="title">
+                  資訊推廣
+                  <span class="arrow"></span>
+                </div>
+              </summary>
+              <div class="group">
+                <div class="headline">雲端主機與網路</div>
+                <ul >
+                  <li><a href="#">ＸＸＸＸＸＸ</a></li>
+                  <li><a href="#">ＸＸＸＸＸＸ</a></li>
+                  <li><a href="#">ＸＸＸＸＸＸ</a></li>
+                </ul>
+                <div class="headline">連結分類二</div>
+                <ul>
+                  <li><a href="#">ＸＸＸＸＸＸ</a></li>
+                  <li><a href="#">ＸＸＸＸＸＸ</a></li>
+                  <li><a href="#">ＸＸＸＸＸＸ</a></li>
+                  <li><a href="#">ＸＸＸＸＸＸ</a></li>
+                </ul>
+                <div class="headline">連結分類三</div>
+                <ul>
+                  <li><a href="#">ＸＸＸＸＸＸ</a></li>
+                  <li><a href="#">ＸＸＸＸＸＸ</a></li>
+                  <li><a href="#">ＸＸＸＸＸＸ</a></li>
+                  <li><a href="#">ＸＸＸＸＸＸ</a></li>
+                  <li><a href="#">ＸＸＸＸＸＸ</a></li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <div class="title">
+                  認識我們
+                  <span class="arrow"></span>
+                </div>
+              </summary>
+              <div class="group">
+                <div class="headline-2"><a href="#">簡介與願景</a></div>
+                <div class="headline-2"><a href="#">品質與承諾</a></div>
+                <div class="headline-2"><a href="#">組織與執掌</a></div>
+            </details>
+           
+            <a href="#">
+              <div class="side-menu-link">資訊處園地</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo"></div>
+      <div class="nav-bar d-none d-md-block d-lg-block">
+        <ul class="row-box">
+            <li><a href="https://itriweb.itri.org.tw/">ITRIWeb</a></li>
+            <li><a href="https://empfinder.itri.org.tw/WebPage/ED_QueryIndex.aspx">尋找工研人</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        <div class="row-box-2">
+          <nav >
+            <div class="dropdown">
+              <span class="on">服務介紹與申請</span>
+              <div class="content">
+                <div class="group">
+                  <div class="headline"><a href="#">雲端主機與網路</b></a></div>
+                  <ul>
+                    <li><a href="#">itri-cloud主機</a></li>
+                    <li><a href="#">網站代管</a></li>
+                    <li><a href="#">資訊系統環境</a></li>
+                    <li><a href="#">工研院APP</a></li>
+                    <li><a href="#">無線網路</a></li>
+                    <li><a href="#">有線網路</a></li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <div class="headline"><a href="#">電腦規格與軟體使用</a></div>
+                  <ul>
+                    <li><a href="#">電腦請購規格建議</a></li>
+                    <li><a href="#">共購軟體 / 個人軟體</a></li>
+                  </ul>
+                  <div class="headline mt-4"><a href="#">院內分機與手機門號</a></div>
+                  <ul>
+                    <li><a href="#">分機使用說明</a></li>
+                    <li><a href="#">行動電話申請</a></li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <div class="headline"><a href="#">E-mail 與網路空間</a></div>
+                  <ul>
+                    <li><a href="#">E-mail 收費方案</a></li>
+                    <li><a href="#">Sdrive 收費方案</a></li>
+                    <li><a href="#">Teamspace</a></li>
+                  </ul>
+                  <div class="headline mt-4"><a href="#">雲端視訊</a></div>
+                  <ul>
+                    <li><a href="#">電視訊軟體說明</a></li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <div class="headline"><a href="#">資源探索</a></div>
+                  <ul>
+                    <li><a href="#">圖書館</a></li>
+                    <li><a href="#">廠商探索系統</a></li>
+                    <li><a href="#">研發探索系統</a></li>
+                    <li><a href="#">研發工具介紹</a></li>
+                  </ul>
+                  <div class="headline mt-4"><a href="#">文書用印與文件權限</a></div>
+                  <ul>
+                    <li><a href="#">文書網</a></li>
+                    <li><a href="#">文件權限保護工具</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <span>資訊推廣</span>
+              <div class="content">
+                <div class="group">
+                  <div class="headline">連結分類一</div>
+                  <ul>
+                    <li><a href="#">連結分類一</a></li>
+                    <li><a href="#">連結分類一</a></li>
+                    <li><a href="#">連結分類一</a></li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <div class="headline">連結分類一</div>
+                  <ul>
+                    <li><a href="#">連結分類一</a></li>
+                    <li><a href="#">連結分類一</a></li>
+                    <li><a href="#">連結分類一</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <span>認識我們</span>
+              <div class="content">
+                <div class="group">
+                    <ul >
+                    <li class="dropdown-item"><a href="#">簡介與願景</a></li>
+                    <li class="dropdown-item"><a href="#">品質與承諾</a></li>
+                    <li class="dropdown-item"><a href="#">組織與執掌</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <span><a href="#">資訊處園地</a></span>
+              </div>
+            </div>
+          </nav>
+        </div>
+       
+      </div>
+    </div>
+</header>   
+
+
+<a href="#" onclick="goToTop()" id="gototop-btn" class="gototop-btn"></a> 
+<div class="customer-service-btn-box">
+  <img class="dialog-box" id="dialog-box" src="./images/dialog-box.svg" alt="我是智能客服酷哥！">
+  <a href="https://18899robot.itri.org.tw" target="_blank"><div class="customer-service-btn">
+  </div></a>
+</div>
+<section class="banner">
+    <div class="container h-100">
+      <div class="row h-100">
+
+          <div class="image-left-box col-md-4 d-none d-md-block">
+            <img class="banner-image-left" src="./images/banner/image-left-1.svg" alt="">
+
+        </div>
+        <div class="col-md-4 page-title-box">
+          <h1 class="inside-page-title">Outlook設定</h1>
+          <!-- <div class="dec-line"><img src="./images/banner/dec-line.svg" alt=""></div> -->
+        </div>
+
+          <div class="image-right-box col-md-4 d-none d-md-block">
+            <img class="banner-image-right" src="./images/banner/image-right-2.svg" alt="">
+          </div>
+      </div>
+    </div>
+</section>
+<!------------------------------------------ 內容 ------------------------------------------>
+
+<section class="inside-page">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="#">首頁</a></li>
+      <li>重點服務</li>
+      <li>Outlook設定</li>
+    </ul>
+
+    <div class="inside-page-container">
+      <button class="tab-btn" onclick="openTab(event, 'tab1', 'tab1')">Tab 1</button>
+      <button class="tab-btn" onclick="openTab(event, 'tab2', 'tab2')">Tab 2</button>
+  
+      <div id="tab1" class="tab-content active">
+        <div class="teaching-steps-container">
+          <div class="teaching-steps-title">
+            <h3>Outlook帳戶設定</h3>
+          </div>
+            <div class="teaching-steps-content">
+          <div class="teaching-steps-txt">
+            <ol>
+              <li>點選左下角視窗圖示，在上方搜尋列輸入【控制台】，中間搜尋結果點選【控制台】。
+                <br>
+                <div class="teaching-steps-img">
+                  <img src="./images/teaching-steps/outlook/outlook_1.png" alt="">
+                </div>
+              </li>
+              <li>電腦開啟【控制台】，右上方【檢視方式】選擇大/小圖示，點選【Mail】或【郵件】。
+                <br>
+                <div class="teaching-steps-img">
+                  <img src="./images/teaching-steps/outlook/outlook_2.png" alt="">
+                </div>
+              </li>
+              <li>點選【顯示設定檔】。
+                <br>
+                <div class="teaching-steps-img">
+                  <img src="./images/teaching-steps/outlook/outlook_3.png" alt="">
+                </div>
+              </li>
+              <li>
+                若已有設定檔，可點選【內容】查看郵件地址是否正確，不需要的設定檔可以移除。<br>
+                若沒有設定檔或既有設定檔並非本人郵件地址，請點選【新增】。
+                <br>
+                <div class="teaching-steps-img">
+                  <img src="./images/teaching-steps/outlook/outlook_4.png" alt="">
+                </div>
+              </li>
+              <li>輸入設定檔名稱(任一名稱)，按下確定。
+                <br>
+                <div class="teaching-steps-img">
+                  <img src="./images/teaching-steps/outlook/outlook_5.png" alt="">
+                </div>
+              </li>
+              <li>新增帳戶時只需要輸入院內郵件地址，例如：123@itri.org.tw，即可點選【下一步】。
+                <br>
+                <div class="teaching-steps-img">
+                  <img src="./images/teaching-steps/outlook/outlook_6.png" alt="">
+                </div>
+              </li>
+              <li>登入視窗出現時點選【其他選擇】、【使用其他帳戶】，使用者名稱輸入itri\工號，密碼輸入工研院密碼後按【確定】。
+                <br>
+                <div class="teaching-steps-img">
+                  <img src="./images/teaching-steps/outlook/outlook_7.png" alt="">
+                </div>
+              </li>
+              <li>出現設定成功的視窗後點選【完成】即可。
+                <br>
+                <div class="teaching-steps-img">
+                  <img src="./images/teaching-steps/outlook/outlook_8.png" alt="">
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      </div>
+  
+      <div id="tab2" class="tab-content">
+        <h1>Tab 2 Content</h1>
+        <p>This is the content of Tab 2.</p>
+      </div>
+         
+      </div>
+    </div>
+  </div>
+  </div>
+</div>   
+</section>  
+
+<!------------------------------------------ 內容 ------------------------------------------>
+
+    
+ <footer>
+  <div class="d-none d-md-block d-lg-block">
+    <div class="info">
+    <div class="itri-logo"><img src=".//images/itri_logo.svg" alt="工研院logo">
+    </div>
+    <p class="info-word">版權所有© 2023 工業技術研究院 服務窗口：XXX(分機:00000)<br>
+      限院內同仁公務使用，禁止對外公開  |  網站設計製作：資訊處　</p>
+    </div>  
+  </div>
+  <div class="info d-block d-md-none d-lg-none">
+    版權所有© 2023 工業技術研究院<br/>
+    限院內同仁公務使用 禁止對外公開<br /><br />
+    網站設計製作：資訊處<br />
+  </div>
+</footer>
+<script src="./js/bootstrap.min.js"></script>
+      <script src="./js/goToTop.js"></script>
+      <script src="./js/chatbot.js"></script>
+      <script>
+           function openTab(evt, tabName, url) {
+        var i, tabContent, tabBtn;
+        tabContent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabContent.length; i++) {
+          tabContent[i].style.display = "none";
+        }
+        tabBtn = document.getElementsByClassName("tab-btn");
+        for (i = 0; i < tabBtn.length; i++) {
+          tabBtn[i].className = tabBtn[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        history.pushState(null, null, url);
+      }
+        </script>
+</body>
+ 
+</html>
